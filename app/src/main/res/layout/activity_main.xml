@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mother"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFF7"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/back_top"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:id="@+id/home"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-45dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Kevin De Barber"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/servicesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/divider"
+                android:text="Service" />
+
+            <Button
+                android:id="@+id/bookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/divider"
+                android:text="Book" />
+
+            <Button
+                android:id="@+id/galleryBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/divider"
+                android:text="Gallery" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+                           <ImageView
+                               android:layout_width="150dp"
+                               android:layout_height="150dp"
+                               android:src="@drawable/workber"/>
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/poppinsbold"
+                               android:text="When it comes to haircuts, Kevin De barber knows best."
+                               android:textColor="#85A1F2"
+                               android:textSize="20sp"
+                               android:textStyle="bold" />
+                               <TextView
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/poppinsregular"
+                                   android:text="Kevin De Barber have been trained to give you exceptional service and quality haircuts .Kevin De Barber have been trained to give you exceptional service and quality haircuts.Kevin De Barber have been trained to give you exceptional service and quality haircuts
+                                    "
+                                   android:textColor="@color/black"
+                                   android:textSize="10sp"
+                                    />
+
+
+                       </LinearLayout>
+
+
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:orientation="horizontal"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_width="149dp"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/poppinsregular"
+                               android:text="The Legendary Barbers have been trained to give you exceptional service, quality haircuts and excellent advice on the use of our outstanding Legends products which will ensure you maintain your great look until your next visit."
+                               android:textAlignment="textStart"
+                               android:textColor="@color/black"
+                               android:textSize="10dp" />
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="150dp"
+                               android:src="@drawable/barber"/>
+
+
+
+                       </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="219dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/setbar" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_height="wrap_content"
+                            android:text="The Legendary Barbers have been trained to give you exceptional service, quality haircuts and excellent advice on the use of our outstanding Legends products which will ensure you maintain your great look until your next visit."
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:layout_height="wrap_content"
+                            android:text="The Legendary Barbers have been trained to give you exceptional service, quality haircuts and excellent advice on the use of our outstanding Legends products which will ensure you maintain your great look until your next visit."
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="190dp"
+                            android:src="@drawable/catton"/>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="320dp"
+                        android:layout_height="2dp"
+                        android:background="#85A1F2"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Find us Here"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="25dp"
+                        android:textAlignment="center"
+                        android:textColor="#85A1F2"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/facebook"
+                            android:src="@drawable/facebook"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/whatapp"
+                            android:src="@drawable/app"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/tiktok"
+                            android:src="@drawable/tiktok"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/twitter"
+                            android:src="@drawable/twitter"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/instagram"
+                            android:src="@drawable/intagram"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</ScrollView>

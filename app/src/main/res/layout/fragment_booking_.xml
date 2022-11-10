@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Booking_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="162dp"
+            app:cardElevation="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="359dp"
+                android:layout_height="162dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="137dp"
+                    android:layout_height="119dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:padding="15dp"
+                    android:text="The perfect smile is an appointment away"
+
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/redappoint" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
